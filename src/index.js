@@ -5,6 +5,8 @@ import App from './App';
 import dataSlice from './Slice/dataSlice'
 import {configureStore} from '@reduxjs/toolkit'
 import {Provider} from 'react-redux'
+import 'bootstrap/dist/css/bootstrap.css';
+
 
 const store=configureStore({reducer:{dataSlice}})
 
