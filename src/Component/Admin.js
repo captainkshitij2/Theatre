@@ -4,6 +4,7 @@ import { disableSeats,makeArrangement} from '../Slice/dataSlice';
 import { Link } from 'react-router-dom';
 import '../Style/book.css'
 import styles from '../Style/button.module.css'
+import {Button} from 'react-bootstrap'
 
 
 function Admin() {
@@ -17,7 +18,7 @@ function Admin() {
         <div>
         <input placeholder="no of rows" onChange={(e)=>{setDimension({...dimension,row:e.target.value})}} type="number"/>
         <input placeholder="no of columns" onChange={(e)=>{setDimension({...dimension,column:e.target.value})}} type="number"/>
-        <button onClick={()=>{dispatch(makeArrangement({row:dimension.row,column:dimension.column}))}}>generate</button>
+        <Button onClick={()=>{dispatch(makeArrangement({row:dimension.row,column:dimension.column}))}}>Rearrange</Button>
         </div>
       </header>
       <main>
@@ -47,7 +48,7 @@ function Admin() {
           </tbody>
         </table>
         <div>
-          <Link to="/"><button>Go back</button></Link>
+          <Link to="/"><button>To Home</button></Link>
           <button onClick={()=>{window.alert("Saved Successfully")}}>Save Disabled seats</button>
         </div>
       </main>

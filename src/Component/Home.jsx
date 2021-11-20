@@ -6,22 +6,20 @@ import {Button } from 'react-bootstrap'
 function Home() {
   return (
     <>
+    <center className='mt-4'>
       <header>
-        <h2>Cinema House</h2>
+        <h2>MY CINEMA</h2>
       </header>
-      <main>
         <div>
-          <div><img id="thumbnail" alt="soul" src="https://www.themoviedb.org/t/p/original/bzDAfXoqNAvWUe7uss2NE3BmRqy.jpg"></img></div>
+          <div><img id="thumbnail" alt="soul" src=""></img></div>
           <div>
-            <Link to="/book"><Button>customer</Button></Link>
+            <Link to="/book"><Button>Ticket booking</Button></Link>
             <br/>
-            <Link to="/admin"><Button>admin</Button></Link>
+            <br/>
+            <Link to="/admin"><Button>Administrator</Button></Link>
           </div>
         </div>
-      </main>
-      <footer>
-
-      </footer>
+        </center>
     </>
   )
 }
